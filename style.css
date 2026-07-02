@@ -1,4 +1,10 @@
+img{
+   width: 200px;
+}
 body{
    text-align:center;
-   font-family: 'courier New ','Courier New', Courier, monospace;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   background:pink;
+   color:var
 }
+
