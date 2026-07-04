@@ -1,3 +1,8 @@
+:root{
+   --main-color: #ff69b4;
+   --dark-color: #ffb6c1;
+   --text-color: #000000;
+}
 img{
    width: 200px;
 }
@@ -5,7 +10,65 @@ body{
    text-align:center;
    font-family: "Comic Sans MS", cursive, sans-serif;
    background:pink;
-   color:var
+   color:var(--dark-color);
+   background-image:linear-gradient(45deg ,purple)
+}
+header{
+   text-align:right;
+   vertical-align:top;
+   margin: 30px;
+}
+footer{
+   text-align:right;
+   vertical-align:bottom;
+   margin: 80px;
+   padding: 20px;
+}
+.first{
+   grid-area:a;
+   background-color:var(--main-color);
+   color:white
 }
 
-
+.second{
+   grid-area:b;
+   background-color:var(--dark-color);
+   color:black
+}
+.third{
+   grid-area:c;
+   background-color:var(--main-color);
+   color:white
+}
+.box{
+   border: 2px solid var(--main-color);
+   padding: 20px;
+   margin: 20px;
+}
+.animated{
+   animation:wobble 1s ease-in-out infinite alternate;
+}
+@keyframes wobble{
+   0%{transform:rotate(-5deg);}
+   100%{transform:rotate(5deg);}
+}
+.flex-container{
+   display:flex;
+   justify-content:space-around;
+   align-items:center;
+   flex-direction:row;
+   background-color:var(--dark-color);
+}
+.flex-box{
+   background-color:var(--main-color);
+   color:white;
+   padding:20px;
+   margin:10px;
+   flex:1;
+   text-align:center;
+}
+.item{
+   background-color:beige;
+   padding:20px;
+   color:yellow
+}
